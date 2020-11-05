@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import java.util.concurrent.TimeUnit;
 
 @RestController
 @Slf4j // 用于通过log打印日志
@@ -42,6 +43,23 @@ public class PaymentController {
             return new CommonResult(200,"查询成功，serverPort: "+serverPort,payment);
         }else{
             return new CommonResult(444,"查询失败，ID:"+id,null);
+        }
+    }
+
+    // 用于测试自定义的负载均衡算法，通过查看端口号判断是谁在提供服务
+    @GetMapping(value = "/payment/lb")
+    public String getPaymentLB() {
+        return serverPort;
+    }
+
+    @GetMapping(value = "/payment/feign/timeout")
+    public String paymentFeignTimeout() {
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (Exception e){
+            e.printStackTrace();
+        } finally {
+            return serverPort;
         }
     }
 }
