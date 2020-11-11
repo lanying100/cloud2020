@@ -17,10 +17,16 @@
         <module>cloud-provider-payment8002</module>
         <module>cloud-provider-payment8004</module>
         <module>cloud-consumerzk-order80</module>
-        <module>cloud-paymentconsul-payment8006</module>
         <module>cloud-providerconsul-payment8006</module>
         <module>cloud-consumerconsul-order80</module>
         <module>cloud-consumer-feign-order80</module>
+        <module>cloud-provider-hystrix-payment8001</module>
+        <module>cloud-consumer-feign-hystrix-order80</module>
+        <module>cloud-consumer-hystrix-dashboard9001</module>
+        <module>cloud-gateway-gateway9527</module>
+        <module>cloud-config-center-3344</module>
+        <module>cloud-config-client-3355</module>
+        <module>cloud-config-client-3366</module>
     </modules>
 
     <!-- 统一管理jar包版本 -->
@@ -42,7 +48,7 @@
         <hutool-all.version>5.1.0</hutool-all.version>
     </properties>
 
-    <!-- 子模块继承之后，提供作用：锁定版本 + 子module不用谢groupId和version -->
+    <!-- 子模块继承之后，提供作用：锁定版本 + 子module不用写groupId和version -->
     <dependencyManagement>
         <dependencies>
             <!--spring boot 2.2.2-->

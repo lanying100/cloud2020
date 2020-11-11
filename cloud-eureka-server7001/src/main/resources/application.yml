@@ -11,6 +11,6 @@ eureka:
     fetch-registry: false
     service-url:
       # 集群：指向其它Eureka
-      defaultZone: http://eureka7002.com:7002/eureka/
+      # defaultZone: http://eureka7002.com:7002/eureka/
       # 单机：指向自己
-      # defaultZone: http://eureka7001.com:7001/eureka/
+      defaultZone: http://eureka7001.com:7001/eureka/
