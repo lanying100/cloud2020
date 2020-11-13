@@ -8,7 +8,7 @@ import org.springframework.web.client.RestTemplate;
 @Configuration
 public class ApplicationContextConfig {
     @Bean
-    @LoadBalanced // 赋予RestTemplate负载均衡的能力，轮训访问Provider集群中的每一台机器
+    @LoadBalanced // 赋予RestTemplate负载均衡的能力，轮询访问Provider集群中的每一台机器
     public RestTemplate getRestTemplate(){
         return new RestTemplate();
     }
