@@ -21,7 +21,7 @@ spring:
 
 mybatis:
   mapper-locations: classpath*:mapper/*.xml
-  type-aliases-package: com.lanying.springcloud.domain
+  type-aliases-package: com.lanying.springcloud.entity
 
 eureka:
   client:
