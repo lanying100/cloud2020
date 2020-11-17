@@ -1,0 +1,19 @@
+# Intellij IDEA 如何全文搜索（类似Eclipse中的Ctrl + H）
+    Edit -- Find -- Find in Path（相当好用）
+    快捷键 Ctrl + Shift + F（和手心输入法的简体繁体转换冲突了）
+
+# Maven第三方私服
+
+# 服务名区分大小写吗？
+    比如本项目中，yml中配置的是cloud-payment-service，后端代码里拼接的url中是CLOUD-PAYMENT-SERVICE。能正常访问
+
+# URL区分大小写吗？
+    1.Windows主机不区分
+    2.Linux主机区分
+
+# dao接口上的@Mapper注解和@Repository注解
+    1.@Mapper是Mybatis的注解：用来找到Mapper
+    2.@Repository是Spring的注解: 用来配置Bean。可以不加，但Intellij IDEA会有错误提示
+    3.@MapperScan("包名")可以代替@Mapper
+    https://blog.csdn.net/Xu_JL1997/article/details/90934359
+
