@@ -9,7 +9,7 @@ spring:
     config:
       label: master #分支名称
       name: config #配置文件名称
-      profile: dev #读取后缀名称 上诉3个综合就是 master分支上 config-dev.yml
+      profile: dev #读取后缀名称 上述3个综合起来就是 master分支上 config-dev.yml
       uri: http://localhost:3344
   # rabbit相关配置 15672是web管理界面的端口，5672是MQ访问的端口
   rabbitmq:

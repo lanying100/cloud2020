@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>cloud-consumerzk-order80</artifactId>
+
     <dependencies>
         <dependency><!-- 引用自己定义的api通用包，可以使用Payment支付Entity -->
             <groupId>com.lanying.springcloud</groupId>
@@ -61,7 +62,5 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-
 
 </project>
