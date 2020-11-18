@@ -1,3 +1,6 @@
+# 周阳老师SpringCloud（H版&Alibaba）第二季的视频
+    https://www.bilibili.com/video/av93824064
+
 # Intellij IDEA 如何全文搜索（类似Eclipse中的Ctrl + H）
     Edit -- Find -- Find in Path（相当好用）
     快捷键 Ctrl + Shift + F（和手心输入法的简体繁体转换冲突了）
